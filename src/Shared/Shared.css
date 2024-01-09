@@ -1,0 +1,100 @@
+.card1 {
+  position: relative;
+  /* cursor: pointer; */
+}
+.card-body2 {
+  width: 100%;
+  height: 100%;
+  top: -100%;
+  left: 0;
+  position: absolute;
+  background-color: rgba(14, 14, 14, 0.405);
+  /* backdrop-filter: blur(10px); */
+  transition: 1s;
+}
+
+.card1:hover .card-body2 {
+  top: 0;
+}
+
+.image-1 {
+  animation-name: image1;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+@keyframes image1 {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.item-image:hover > .i-img {
+  border: 2px solid red;
+  padding: 4px;
+  transition: 0.5s linear;
+}
+.shopCard {
+  position: relative;
+  width: 288px !important;
+  height: 384px !important;
+}
+
+.shopHover {
+  width: 288px;
+  height: 384px;
+  top: -60px;
+  right: 0;
+  position: absolute;
+}
+.cartIcon {
+  border-radius: 50%;
+  background-color: black;
+  padding: 10px;
+  position: absolute;
+  right: 20px;
+}
+.cardCartBoxHover {
+  width: 100%;
+  border: solid black;
+  position: relative;
+  padding: 0px;
+  right: 25px;
+  border-radius: 50px;
+  transition: 0.5s;
+  font-size: 1px;
+}
+.cardCartBox {
+  height: 40px;
+  display: flex;
+  gap: 0px 18px;
+  align-items: center;
+}
+
+.cardCartBox:hover .cardCartBoxHover {
+  right: 10px;
+  padding: 15px 20px;
+  padding-right: 100px;
+  background-color: black;
+  font-size: 18px;
+  font-family: monospace;
+}
+.cardCartBox:hover .cartIcon {
+  background-color: #dc2656;
+  cursor: pointer;
+}
+
+.react-tabs__tab--selected {
+  border-left: none !important;
+  color: #dc2656 !important;
+  border-right: none !important;
+  text-transform: uppercase;
+  font-size: 20px !important;
+  font-weight: bold;
+  border-top: 2px solid #dc2656 !important;
+}
